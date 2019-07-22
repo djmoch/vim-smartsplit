@@ -2,7 +2,7 @@
 " TITLE:   VIM-SMARTSPLIT
 " AUTHOR:  Daniel Moch <daniel AT danielmoch DOT com>
 " LICENSE: VIM LICENSE
-" VERSION: 0.1.0-dev
+" VERSION: 0.1.0
 "
 if exists('g:loaded_smartsplit') || &cp
     finish
