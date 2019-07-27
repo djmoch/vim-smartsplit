@@ -14,7 +14,6 @@ set cpo&vim
 
 function! s:WinWidth()
     let l:textwidth = &tw ? (&tw + 8) : 80
-    echo l:textwidth
     if &number
         let l:numwidth = &numberwidth > len(line('$')) + 1 ?
                     \ &numberwidth : len(line('$')) + 1
