@@ -66,6 +66,14 @@ function! s:Buffer(...)
     endif
 endfunction
 
+function! s:CmdSplit(command)
+    if s:WinWidth()
+        execute 'vertical '.a:command
+    else
+        execute a:command
+    endif
+endfunction
+
 augroup smartsplit
     autocmd!
     autocmd VimResized * call <sid>DiffOpt()
@@ -75,6 +83,7 @@ augroup END
 command! -complete=file -nargs=? New call <sid>NewWindow(<f-args>)
 command! -complete=help -nargs=1 Help call <sid>Help(<f-args>)
 command! -complete=buffer -nargs=1 Buffer call <sid>Buffer(<f-args>)
+command! -complete=command -nargs=1 CmdSplit call <sid>CmdSplit(<f-args>)
 command! Split call <sid>Buffer()
 
 let &cpo = s:save_cpo

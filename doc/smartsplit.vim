@@ -55,6 +55,11 @@ Help                        A smart version of |:help|. Horizontal versus
                             vertical splitting is determined as described in
                             |:Split|.
 
+                                        *smartsplit-CmdSplit* *:CmdSplit*
+CmdSplit {cmd}              A smart version of |:vertical|. Horizontal versus
+                            vertical splitting is determined as described in
+                            |:Split|.
+
 =============================================================================
 2. ABOUT                                *smartsplit-about*
 
