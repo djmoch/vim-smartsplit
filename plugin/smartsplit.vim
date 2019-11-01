@@ -85,6 +85,7 @@ command! -complete=help -nargs=1 Help call <sid>Help(<f-args>)
 command! -complete=buffer -nargs=1 Buffer call <sid>Buffer(<f-args>)
 command! -complete=command -nargs=1 CmdSplit call <sid>CmdSplit(<f-args>)
 command! Split call <sid>Buffer()
+command! ScratchBuffer call <sid>ScratchBuffer()
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

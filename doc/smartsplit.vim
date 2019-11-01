@@ -60,6 +60,11 @@ CmdSplit {cmd}              A smart version of |:vertical|. Horizontal versus
                             vertical splitting is determined as described in
                             |:Split|.
 
+                                     *smartsplit-ScratchBuffer* *:ScratchBuffer*
+ScratchBuffer               Open a scratch buffer (see |special-buffers|).
+                            Horizontal versus vertical splitting is determined
+                            as described in |:Split|.
+
 =============================================================================
 2. ABOUT                                *smartsplit-about*
 
